@@ -17,3 +17,8 @@ vulkanalia = { version = "=0.26.0", features = [
     "window",
 ] }
 winit = "0.29"
+
+[[bin]]
+name = "05_base_code"
+path = "src/05_base_code.rs"
+
