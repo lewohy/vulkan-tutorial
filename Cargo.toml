@@ -22,3 +22,6 @@ winit = "0.29"
 name = "05_base_code"
 path = "src/05_base_code.rs"
 
+[[bin]]
+name = "06_instance"
+path = "src/06_instance.rs"
