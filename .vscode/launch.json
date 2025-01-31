@@ -4,7 +4,6 @@
     // For more information, visit: https://go.microsoft.com/fwlink/?linkid=830387
     "version": "0.2.0",
     "configurations": [
-        
         {
             "type": "lldb",
             "request": "launch",
@@ -12,16 +11,33 @@
             "cargo": {
                 "args": [
                     "build",
-                    "--bin=vulkan-tutorial",
-                    "--package=vulkan-tutorial"
+                    "--bin=${fileBasenameNoExtension}"
                 ],
-                "filter": {
-                    "name": "vulkan-tutorial",
-                    "kind": "bin"
-                }
             },
             "args": [],
-            "cwd": "${workspaceFolder}"
+            "cwd": "${workspaceFolder}",
+            "env": {
+                "RUST_LOG": "${input:log level}"
+            },
+            "console": "integratedTerminal"
+        },
+    ],
+    "inputs": [
+        {
+            "id": "log level",
+            "type": "pickString",
+            "default": "info",
+            "options": [
+                {
+                    "label": "info",
+                    "value": "info"
+                },
+                {
+                    "label": "debug",
+                    "value": "debug"
+                }
+            ],
+            "description": "RUST_LOG에 쓰일 값"
         }
     ]
 }
