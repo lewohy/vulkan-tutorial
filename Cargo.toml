@@ -33,3 +33,7 @@ path = "src/07_validation_layers.rs"
 [[bin]]
 name = "08_physical_devices_and_queue_families"
 path = "src/08_physical_devices_and_queue_families.rs"
+
+[[bin]]
+name = "09_logical_device_and_queues"
+path = "src/09_logical_device_and_queues.rs"
