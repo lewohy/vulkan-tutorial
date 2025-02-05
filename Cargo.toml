@@ -41,3 +41,7 @@ path = "src/09_logical_device_and_queues.rs"
 [[bin]]
 name = "10_window_surface"
 path = "src/10_window_surface.rs"
+
+[[bin]]
+name = "11_swapchain"
+path = "src/11_swapchain.rs"
