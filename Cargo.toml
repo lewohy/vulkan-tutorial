@@ -45,3 +45,8 @@ path = "src/10_window_surface.rs"
 [[bin]]
 name = "11_swapchain"
 path = "src/11_swapchain.rs"
+
+[[bin]]
+name = "12_image_views"
+path = "src/12_image_views.rs"
+
