@@ -50,3 +50,6 @@ path = "src/11_swapchain.rs"
 name = "12_image_views"
 path = "src/12_image_views.rs"
 
+[[bin]]
+name = "13_pipeline_introduction"
+path = "src/13_pipeline_introduction.rs"
