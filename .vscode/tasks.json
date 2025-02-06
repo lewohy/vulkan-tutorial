@@ -1,0 +1,47 @@
+{
+    // See https://go.microsoft.com/fwlink/?LinkId=733558
+    // for the documentation about the tasks.json format
+    "version": "2.0.0",
+    "tasks": [
+        {
+            "label": "glslc: compile vertex shader",
+            "type": "shell",
+            "command": "glslc",
+            "args": [
+                "./shaders/shader.vert",
+                "-o",
+                "./shaders/vert.spv",
+            ],
+            "group": {
+                "kind": "build",
+                "isDefault": false
+            }
+        },
+        {
+            "label": "glslc: compile fragment shader",
+            "type": "shell",
+            "command": "glslc",
+            "args": [
+                "./shaders/shader.frag",
+                "-o",
+                "./shaders/frag.spv",
+            ],
+            "group": {
+                "kind": "build",
+                "isDefault": false
+            }
+        },
+        {
+            "label": "glslc: compile all shader",
+            "dependsOn": [
+                "glslc: compile vertex shader",
+                "glslc: compile fragment shader"
+            ],
+            "group": {
+                "kind": "build",
+                "isDefault": false
+            },
+            "dependsOrder": "parallel"
+        }
+    ]
+}

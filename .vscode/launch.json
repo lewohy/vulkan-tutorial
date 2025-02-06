@@ -19,7 +19,8 @@
             "env": {
                 "RUST_LOG": "${input:log level}"
             },
-            "console": "integratedTerminal"
+            "console": "integratedTerminal",
+            "preLaunchTask": "glslc: compile all shader",
         },
     ],
     "inputs": [

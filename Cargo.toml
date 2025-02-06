@@ -53,3 +53,7 @@ path = "src/12_image_views.rs"
 [[bin]]
 name = "13_pipeline_introduction"
 path = "src/13_pipeline_introduction.rs"
+
+[[bin]]
+name = "14_shader_modules"
+path = "src/14_shader_modules.rs"
