@@ -57,3 +57,7 @@ path = "src/13_pipeline_introduction.rs"
 [[bin]]
 name = "14_shader_modules"
 path = "src/14_shader_modules.rs"
+
+[[bin]]
+name = "15_fixed_functions"
+path = "src/15_fixed_functions.rs"
