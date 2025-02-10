@@ -61,3 +61,7 @@ path = "src/14_shader_modules.rs"
 [[bin]]
 name = "15_fixed_functions"
 path = "src/15_fixed_functions.rs"
+
+[[bin]]
+name = "16_render_passes"
+path = "src/16_render_passes.rs"
