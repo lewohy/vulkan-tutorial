@@ -65,3 +65,7 @@ path = "src/15_fixed_functions.rs"
 [[bin]]
 name = "16_render_passes"
 path = "src/16_render_passes.rs"
+
+[[bin]]
+name = "17_pipeline_conclusion"
+path = "src/17_pipeline_conclusion.rs"
