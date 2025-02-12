@@ -73,3 +73,7 @@ path = "src/17_pipeline_conclusion.rs"
 [[bin]]
 name = "18_framebuffers"
 path = "src/18_framebuffers.rs"
+
+[[bin]]
+name = "19_command_buffers"
+path = "src/19_command_buffers.rs"
