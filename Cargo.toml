@@ -77,3 +77,7 @@ path = "src/18_framebuffers.rs"
 [[bin]]
 name = "19_command_buffers"
 path = "src/19_command_buffers.rs"
+
+[[bin]]
+name = "20_rendering_and_presentation"
+path = "src/20_rendering_and_presentation.rs"

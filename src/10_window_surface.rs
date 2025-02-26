@@ -247,6 +247,7 @@ unsafe fn create_logical_device(
 
     // queue family가 같은경우 index를 한번만 넘겨줘도 됨
     data.graphics_queue = device.get_device_queue(indices.graphics, 0);
+    data.present_queue = device.get_device_queue(indices.present, 0);
 
     Ok(device)
 }
